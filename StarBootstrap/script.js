@@ -8,4 +8,7 @@ window.addEventListener('scroll', () => {
     }else if(window.scrollY < 75){
         navEl.classList.remove('navbar-scrolled');
     }
-});
+}); 
+
+
+
