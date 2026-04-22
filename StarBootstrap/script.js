@@ -1,27 +1,29 @@
-//Efeito para a navbar
+const navEl = document.getElementById('navbar');
+const mobileMenuBtn = document.getElementById('mobile-menu');
+const navMenu = document.getElementById('nav-menu');
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
 
-const navEl = document.querySelector('.navbar');
-
+// 1. Efeito de Scroll (Mudar cor da Navbar)
 window.addEventListener('scroll', () => {
-    if(window.scrollY >= 75){
+    if (window.scrollY >= 75) {
         navEl.classList.add('navbar-scrolled');
-    }else if(window.scrollY < 75){
+    } else {
         navEl.classList.remove('navbar-scrolled');
     }
-}); 
+});
 
+// 2. Menu Mobile (Abrir/Fechar)
+mobileMenuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
 
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("#main-nav .nav-link");
-
+// 3. ScrollSpy (Link Ativo conforme a seção)
 window.addEventListener("scroll", () => {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150; // compensação da navbar
-        const sectionHeight = section.clientHeight;
-
+        const sectionTop = section.offsetTop - 100;
         if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
@@ -29,7 +31,6 @@ window.addEventListener("scroll", () => {
 
     navLinks.forEach(link => {
         link.classList.remove("active");
-
         if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
         }
