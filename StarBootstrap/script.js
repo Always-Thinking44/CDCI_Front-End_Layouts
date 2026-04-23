@@ -36,3 +36,31 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+
+
+//script para modal
+
+document.querySelectorAll('.portfolio-link').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.dataset.modal;
+        document.getElementById(id).style.display = 'flex';
+    });
+});
+
+// fechar botão
+document.querySelectorAll('[data-close]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.closest('.janela').style.display = 'none';
+    });
+});
+
+// fechar fora
+window.addEventListener('click', e => {
+    document.querySelectorAll('.janela').forEach(modal => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});

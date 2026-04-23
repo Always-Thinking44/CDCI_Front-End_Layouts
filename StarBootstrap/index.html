@@ -118,7 +118,7 @@
 
         <!--PORTFOLIO SECTION-->
         <section id="portfolio" class="light secao">
-            <div class="textocentro my-5">
+            <div class="textocentro">
                  <h2>Portfolio</h2>
                  <p class="sub">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
@@ -126,7 +126,7 @@
             <div class="card-container">
                 <div class="cartao">
 
-                    <a href="#modal1" class="portfolio-link">
+                    <a href="#modal1" class="portfolio-link" data-modal="modal1">
                         <div class="portfolio-hover">
                             <div>
                                 <i class="fas fa-plus fa-3x"></i>
@@ -143,7 +143,7 @@
 
 
                 <div class="cartao">
-                <a href="#modal1" class="portfolio-link">
+                <a href="#modal1" class="portfolio-link" data-modal="modal2">
                         <div class="portfolio-hover">
                             <div>
                                 <i class="fas fa-plus fa-3x"></i>
@@ -159,7 +159,7 @@
 
 
                 <div class="cartao">
-                    <a href="#modal1" class="portfolio-link">
+                    <a href="#modal1" class="portfolio-link" data-modal="modal3">
                         <div class="portfolio-hover">
                             <div>
                                 <i class="fas fa-plus fa-3x"></i>
@@ -174,7 +174,7 @@
                 </div>
 
                 <div class="cartao">
-                    <a href="#modal1" class="portfolio-link">
+                    <a href="#modal1" class="portfolio-link" data-modal="modal4">
                         <div class="portfolio-hover">
                             <div>
                                 <i class="fas fa-plus fa-3x"></i>
@@ -189,7 +189,7 @@
                 </div>
 
                 <div class="cartao">
-                    <a href="#modal1" class="portfolio-link">
+                    <a href="#modal1" class="portfolio-link" data-modal="modal5">
                         <div class="portfolio-hover">
                             <div>
                                 <i class="fas fa-plus fa-3x"></i>
@@ -204,7 +204,7 @@
                 </div>
 
                 <div class="cartao">
-                    <a href="#modal1" class="portfolio-link">
+                    <a href="#modal1" class="portfolio-link" data-modal="modal6">
                         <div class="portfolio-hover">
                             <div>
                                 <i class="fas fa-plus fa-3x"></i>
@@ -412,249 +412,170 @@
         </form>
 
         </section>
+        
 
 
         <!--PORTFOLIO - MODAIS-->
 
-        <div class="modal fade" id="modal1" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="fs-1 textocentro">Project Name</h3>
-                        <p class="sub textocentro">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/1.jpg" class="img-fluid d-block margemcentro" alt="portfolio 1">
+        
+
+
+        <div class="janela" id="modal1">
+            <div class="janela-box">
+
+                <button class="fechar" data-close>×</button>
+
+                <div class="conteudo">
+                    <h3>Project Name</h3>
+                    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>
                     
-                        <div class=" w-50 d-block mx-auto">
-                            <p class="my-5 paragraph text-black">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                        </div>
-                        <ul class="list-inline textocentro">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="text-center">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
+                    <img src="assets/img/portfolio/1.jpg" alt="portfolio">
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <p class="descricao">
+                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
 
+                    <ul class="detalhes">
+                        <li><strong>Client:</strong> Threads</li>
+                        <li><strong>Category:</strong> Illustration</li>
+                    </ul>
 
-        <div class="modal fade" id="modal2" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="text-uppercase text-center">Project Name</h3>
-                        <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/2.jpg" class="img-fluid d-block margemcentro" alt="portfolio 1">
-                    
-                        <p class="my-5">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <button class="btn-fechar" data-close>Fechar Projeto</button>
 
-                        <ul class="list-inline text-center">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="text-center">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
 
 
 
+        <div class="janela" id="modal2">
+            <div class="janela-box">
 
-        <div class="modal fade" id="modal2" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="textocentro">Project Name</h3>
-                        <p class="textocentro" style="color: #6c757d;">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/2.jpg" class="img-fluid d-block margemcentro" alt="portfolio 1">
+                <button class="fechar" data-close>×</button>
+
+                <div class="conteudo">
+                    <h3>Project Name</h3>
+                    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>
                     
-                        <p class="my-5">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <img src="assets/img/portfolio/2.jpg" alt="portfolio">
 
-                        <ul class="list-inline textocentro">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="textocentro">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
+                    <p class="descricao">
+                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
 
-                    </div>
+                    <ul class="detalhes">
+                        <li><strong>Client:</strong> Threads</li>
+                        <li><strong>Category:</strong> Illustration</li>
+                    </ul>
+
+                    <button class="btn-fechar" data-close>Fechar Projeto</button>
+
                 </div>
             </div>
         </div>
 
 
+        <div class="janela" id="modal3">
+            <div class="janela-box">
 
-        <div class="modal fade" id="modal3" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="text-uppercase text-center">Project Name</h3>
-                        <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/3.jpg" class="img-fluid d-block mx-auto" alt="portfolio 1">
+                <button class="fechar" data-close>×</button>
+
+                <div class="conteudo">
+                    <h3>Project Name</h3>
+                    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>
                     
-                        <p class="my-5">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <img src="assets/img/portfolio/3.jpg" alt="portfolio">
 
-                        <ul class="list-inline textocentro">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="textocentro">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
+                    <p class="descricao">
+                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
 
-                    </div>
+                    <ul class="detalhes">
+                        <li><strong>Client:</strong> Threads</li>
+                        <li><strong>Category:</strong> Illustration</li>
+                    </ul>
+
+                    <button class="btn-fechar" data-close>Fechar Projeto</button>
+
                 </div>
             </div>
         </div>
 
 
+        <div class="janela" id="modal4">
+            <div class="janela-box">
 
-        <div class="modal fade" id="modal4" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="text-uppercase text-center">Project Name</h3>
-                        <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/4.jpg" class="img-fluid d-block mx-auto" alt="portfolio 1">
+                <button class="fechar" data-close>×</button>
+
+                <div class="conteudo">
+                    <h3>Project Name</h3>
+                    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>
                     
-                        <p class="my-5">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <img src="assets/img/portfolio/4.jpg" alt="portfolio">
 
-                        <ul class="list-inline textocentro">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="textocentro">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
+                    <p class="descricao">
+                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
 
-                    </div>
+                    <ul class="detalhes">
+                        <li><strong>Client:</strong> Threads</li>
+                        <li><strong>Category:</strong> Illustration</li>
+                    </ul>
+
+                    <button class="btn-fechar" data-close>Fechar Projeto</button>
+
                 </div>
             </div>
         </div>
 
+        <div class="janela" id="modal5">
+            <div class="janela-box">
 
+                <button class="fechar" data-close>×</button>
 
-        <div class="modal fade" id="modal5" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="text-uppercase text-center">Project Name</h3>
-                        <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/5.jpg" class="img-fluid d-block mx-auto" alt="portfolio 1">
+                <div class="conteudo">
+                    <h3>Project Name</h3>
+                    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>
                     
-                        <p class="my-5">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <img src="assets/img/portfolio/5.jpg" alt="portfolio">
 
-                        <ul class="list-inline textocentro">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="textocentro">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
+                    <p class="descricao">
+                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
 
-                    </div>
+                    <ul class="detalhes">
+                        <li><strong>Client:</strong> Threads</li>
+                        <li><strong>Category:</strong> Illustration</li>
+                    </ul>
+
+                    <button class="btn-fechar" data-close>Fechar Projeto</button>
+
                 </div>
             </div>
         </div>
 
+        <div class="janela" id="modal6">
+            <div class="janela-box">
 
-        <div class="modal fade" id="modal6" aria-labelledby="modal-title" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h3 class="text-uppercase text-center">Project Name</h3>
-                        <p class="text-muted text-center">Lorem ipsum dolor sit amet consectetur</p>
-                        
-                        <img src="assets/img/portfolio/6.jpg" class="img-fluid d-block mx-auto" alt="portfolio 1">
+                <button class="fechar" data-close>×</button>
+
+                <div class="conteudo">
+                    <h3>Project Name</h3>
+                    <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>
                     
-                        <p class="my-5">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <img src="assets/img/portfolio/6.jpg" alt="portfolio">
 
-                        <ul class="list-inline textocentro">
-                            <li>
-                                <strong>Client:</strong>
-                                Threads
-                            </li>
-                            <li>
-                                <strong>Category:</strong>
-                                Illustration
-                            </li>
-                        </ul>
-                        <div class="textocentro">
-                            <button class="fw-bolder btn bg-warning rounded-0 text-white py-3 px-4" data-bs-dismiss="modal">X  Close Project</button>
-                        </div>
+                    <p class="descricao">
+                        Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
 
-                    </div>
+                    <ul class="detalhes">
+                        <li><strong>Client:</strong> Threads</li>
+                        <li><strong>Category:</strong> Illustration</li>
+                    </ul>
+
+                    <button class="btn-fechar" data-close>Fechar Projeto</button>
+
                 </div>
             </div>
         </div>
