@@ -529,7 +529,7 @@ h4{
     .timeline > li .timeline-panel {
         float: left;
         width: 41%;
-        padding: 0 20px 20px 30px;
+        padding: 0 0 20px 70px;
         text-align: right;
     }
     
@@ -551,6 +551,15 @@ h4{
         padding: 0 30px 20px 20px;
         text-align: left;
     }
+    
+    .timeline-body{
+        width: 70%;
+
+    }
+
+    .gambiarra{
+        margin-left: 139px;
+    }
 }
 
 
@@ -569,6 +578,7 @@ h4{
     border-radius: 100%;
     color: white;
     background-color: black;
+    margin-right: 0.5rem; margin-bottom: 0.5rem;
 }
 
 .team-container {
@@ -680,6 +690,12 @@ h4{
     text-transform: uppercase;
 }
 
+.btn-submit:disabled{
+    background-color: #ffc107ad !important; 
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
 .btn-submit:hover {
     background-color: #e6af06;
 }
@@ -713,7 +729,23 @@ h4{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 30px;
+    padding: 20px;
+    font-size: 0.9rem;
 }
+.gap{
+    gap: 10px;
+}
+
+
+/* BOTÃO INPUT FORM */
+
+.btn-active-yellow {
+    background-color: #ffc107 !important;
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
 
 
 
@@ -816,6 +848,11 @@ h4{
 
 
 
+
+
+
+
+
 /* RESPONSIVIDADE!!!! */
 
 
@@ -842,7 +879,8 @@ h4{
 @media (min-width: 992px) {
     .rodape-conteudo {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 100px;
         
     }
 }

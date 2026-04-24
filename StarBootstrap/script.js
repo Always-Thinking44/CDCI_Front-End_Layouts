@@ -64,3 +64,34 @@ window.addEventListener('click', e => {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+const form = document.getElementById('contactForm');
+const btn = form.querySelector('.btn-submit');
+const inputs = form.querySelectorAll('input[required], textarea[required]');
+
+function validarFormulario() {
+    
+    let algumVazio = false;
+    
+    inputs.forEach(input => {
+        if (input.value.trim() === "") {
+            algumVazio = true;
+        }
+    });
+
+    
+    btn.disabled = algumVazio;
+}
+
+
+inputs.forEach(input => {
+    input.addEventListener('input', validarFormulario);
+});
