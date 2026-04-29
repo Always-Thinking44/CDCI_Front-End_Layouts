@@ -9,8 +9,8 @@ body {
 	margin: 0;
 }
 
-section{
-    padding: 10px 0px;
+section {
+    padding: 15px 0px;
 }
 
 p {
@@ -180,4 +180,73 @@ p {
     font-size: 20px !important;
     font-weight: 700 !important;
     margin-bottom: 5px !important;
+}
+
+
+
+/*CHOSE SECTION*/
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 16px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+.features-list li {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.features-list li span {
+    position: relative;
+    z-index: 1;
+    color: #404040;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding: 13px 15px;
+    border-radius: 5px;
+    border-left: 2px solid #7b68ee;
+    background-color: #ffffff;
+    box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
+    transition: 0.4s;
+}
+
+
+.features-list li span::before  {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #7b68ee;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.features-list li span:hover::before {
+    width: 100%;
+}
+
+.features-list li span:hover {
+    color: #ffffff;
 }
