@@ -185,6 +185,9 @@ p {
 
 
 /*CHOSE SECTION*/
+
+
+
 ul {
     padding: 0;
     list-style: none;
@@ -239,7 +242,6 @@ ul {
     height: 100%;
     border-radius: 5px;
     background-color: #7b68ee;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
