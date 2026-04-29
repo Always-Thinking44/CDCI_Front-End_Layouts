@@ -9,14 +9,18 @@ body {
 	margin: 0;
 }
 
+section{
+    padding: 10px 0px;
+}
+
 p {
 	color: #5f5f5f;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.8;
-	letter-spacing: 0.2px;
-	font-family: 'Catamaran', sans-serif;
-	margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 15px;
 }
 
 .section-title h2 {
@@ -46,6 +50,59 @@ p {
 
 
 
+/*SERVICES SECTION*/
+
+.cartao-services {
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 5px 7px 15px 2px rgba(82, 90, 101, 0.12) !important;
+}
+
+.cartao-services img {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.cartao-services:hover {
+    transform: translateY(-10px);
+}
+
+.cartao-services:hover img {
+    transform: scaleX(-1);
+}   
+
+.read-more-container {
+   color: #7b68ee;
+}
+
+.read-more-container .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.read-more-container:hover .arrow {
+    transform: translateX(7px); 
+}
+
+.card-title-services{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+.card-text-services{
+    font-size: 16px;
+    text-align: start;
+    will-change: transform;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
 /* TEAM SECTION */
 
 .team-link {
@@ -68,14 +125,14 @@ p {
     transition: all ease 0.5s;
 }
 
-.card:hover .team-hover{
+.cartao:hover .team-hover{
 	opacity: 1;
 }
 
 .team-link img{
 	transition: transform 0.5s ease;
 }
-.card:hover img{
+.cartao:hover img{
 	transform: scale(1.1);
 }
 
