@@ -252,3 +252,30 @@ ul {
 .features-list li span:hover {
     color: #ffffff;
 }
+
+
+/*BLOG SECTION*/
+.blog-info{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.blog-info li{
+     
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+.blog-info li i{
+    color: #7b68ee !important;  
+    
+}
+
+.blog-info li a{
+    color: #555;
+    text-decoration: none;
+}
