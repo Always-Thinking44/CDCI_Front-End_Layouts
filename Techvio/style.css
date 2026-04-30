@@ -1,3 +1,5 @@
+<!--FORMATAÇÕES GERAIS-->
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -10,7 +12,8 @@ body {
 }
 
 section {
-    padding: 15px 0px;
+    padding: 90px 0px;
+    margin: 10px 0px;
 }
 
 p {
@@ -105,6 +108,7 @@ p {
 
 /* TEAM SECTION */
 
+/* Container para imagens da equipe e hover */
 .team-link {
 	position: relative;
 	display: block;
@@ -112,6 +116,7 @@ p {
 	border-radius: 8px;
 }
 
+/* Efeito de hover para as imagens da equipe */
 .team-hover{
 	opacity: 0;
 	display: flex;
@@ -125,23 +130,26 @@ p {
     transition: all ease 0.5s;
 }
 
+/* Exibe o hover quando o mouse estiver sobre o cartão */
 .cartao:hover .team-hover{
 	opacity: 1;
 }
 
+/* Transição suave para as imagens da equipe */
 .team-link img{
 	transition: transform 0.5s ease;
 }
+
+/* Efeito de zoom para as imagens da equipe ao passar o mouse */
 .cartao:hover img{
 	transform: scale(1.1);
 }
 
-
+/* Estilização dos ícones de redes sociais no hover */
 .a-team {
   display: inline-flex;      
   align-items: center;       
   justify-content: center;   
-
   width: 45px;               
   height: 45px;              
   border: 1px solid #ffffff;
@@ -151,7 +159,7 @@ p {
   transition: 0.3s;
 }
 
-
+/* Estilização dos ícones de redes sociais no hover */
 .a-team i {
   font-size: 18px;           
   color: #ffffff;           
@@ -160,13 +168,11 @@ p {
   padding: 0;
 }
 
-
+/* Efeito de hover para os ícones de redes sociais */
 .a-team:hover {
     background-color: #a51fe4;
     border: none;
 }
-
-
 
 .card-text-team {
     color: #7b68ee !important;
@@ -184,9 +190,9 @@ p {
 
 
 
+
+
 /*CHOSE SECTION*/
-
-
 
 ul {
     padding: 0;
@@ -194,6 +200,7 @@ ul {
     margin: 0;
 }
 
+/* Container para a lista de recursos */
 .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -205,7 +212,7 @@ ul {
     margin-right: -10px;
 }
 
-
+/* Estilização dos itens da lista de recursos */
 .features-list li {
     flex: 0 0 50%;
     max-width: 50%;
@@ -215,7 +222,7 @@ ul {
 }
 
 
-
+/* Estilização dos spans dentro dos itens da lista de recursos */
 .features-list li span {
     position: relative;
     z-index: 1;
@@ -231,7 +238,7 @@ ul {
     transition: 0.4s;
 }
 
-
+/* Cria uma camada de fundo animada, começa com largura 0 (invisível) Será expandida no hover para criar efeito de destaque */
 .features-list li span::before  {
     content: '';
     position: absolute;
@@ -245,10 +252,12 @@ ul {
     transition: 0.4s;
 }
 
+/* Expande a camada de fundo para cobrir todo o span quando o mouse estiver sobre ele, criando um efeito de destaque */
 .features-list li span:hover::before {
     width: 100%;
 }
 
+/* Altera a cor do texto para branco quando o mouse estiver sobre o span, garantindo boa legibilidade contra o fundo roxo */
 .features-list li span:hover {
     color: #ffffff;
 }
@@ -261,8 +270,7 @@ ul {
     margin: 0;
 }
 
-.blog-info li{
-     
+.blog-info li{ 
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
@@ -272,7 +280,6 @@ ul {
 
 .blog-info li i{
     color: #7b68ee !important;  
-    
 }
 
 .blog-info li a{
