@@ -195,31 +195,33 @@
                         </div>
 
                         <div class="skills">
+							<!-- Barra de progresso — data-value define a largura final -->
 							<div class="skill-item">
 								<h6>IT Consulting <em>90%</em></h6>
 								<div class="skill-progress">
-									<div class="progres" data-value="90%" style="width: 90%;"></div>
+									<div class="progres" data-value="90%"></div>
 								</div>
 							</div>
 							<div class="skill-item">
 								<h6>Cloud Solutions <em>75%</em></h6>
 								<div class="skill-progress">
-									<div class="progres" data-value="75%" style="width: 75%;"></div>
+									<div class="progres" data-value="75%"></div>
 								</div>
 							</div>
 							<div class="skill-item">
 								<h6>Managed IT Service <em>85%</em></h6>
 								<div class="skill-progress">
-									<div class="progres" data-value="85%" style="width: 85%;"></div>
+									<div class="progres" data-value="85%"></div>
 								</div>
 							</div>
-						</div>
+						</div>  
                     </div>
 
 
                     <div class="col-md-12 col-lg-6">
-                        <div class="about-img">
-                            <img src="assets/img/about.jpg" alt="" class="img-fluid rounded-2">
+                        <div class="about-image">
+                            <img src="assets/img/about.jpg" alt="Imagem sobre nós" class="img-fluid rounded-2">
+                            
                             <div class="years-design">
                                 <h2>24</h2>
                                 <h5>Years Of Experience</h5>
@@ -743,6 +745,23 @@
             }, { threshold: 0.5 }); // Só dispara quando 50% do número estiver visível
 
             observers.forEach(obs => observer.observe(obs));
+        });
+    </script>
+
+
+
+    <!--Efeito do About-->
+    <script>
+        var wind = $(window);
+        wind.on('scroll', function () {
+            $(".skill-progress .progres").each(function () {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var myVal = $(this).attr('data-value');
+            if (bottom_of_window > bottom_of_object) {
+                $(this).css({ width: myVal });
+            }
+            });
         });
     </script>
 </body>

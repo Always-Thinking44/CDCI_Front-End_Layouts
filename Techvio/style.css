@@ -288,54 +288,6 @@ ul {
 }
 
 
-.about-image {
-    position: relative;
-    text-align: center;
-    margin-left: 0px;
-}
-
-
-.about-img {
-    position: relative;
-    text-align: center;
-    margin-left: 0px;
-}
-
-.about-img .years-design h2 {
-    font-size: 70px;
-    font-weight: 800;
-    background: url(../img/about.jpg) no-repeat;
-    background-position: 50% 50%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.1;
-    color: tomato;
-
-}
-
-.about-img .years-design h5 {
-    color: #ff9800;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 10px;
-}
-
-.about-img .years-design {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 20px;
-    max-width: 250px;
-    padding: 15px 10px;
-    border-radius: 5px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #ff9800;
-    -webkit-box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
-    box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 
@@ -410,4 +362,97 @@ li.active{
     font-weight: 700;
     margin-bottom: 5px;
     word-spacing: -5px;
+}
+
+
+
+
+
+
+
+
+.skills { margin-top: 20px; }
+
+.skills .skill-item { margin-bottom: 20px; }
+
+.skills .skill-item:last-child { margin-bottom: 0px; }
+
+.skills .skill-item h6 {
+  position: relative;
+  z-index: 4;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.skills .skill-item h6 em {
+  float: right;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.skills .skill-item .skill-progress {
+  position: relative;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #ddddff;
+}
+
+
+.skills .skill-item .skill-progress .progres {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #7b68ee;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+
+
+.about-image {
+  position: relative;
+  text-align: center;
+  margin-left: 0px;
+}
+
+
+/* Caixa flutuante com os anos de experiência */
+.about-image .years-design {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  max-width: 250px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ff9800;
+  -webkit-box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
+  box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Texto com imagem de fundo dentro (efeito "clip text") */
+.about-image .years-design h2 {
+  font-size: 70px;
+  font-weight: 800;
+  background: url('../assets/img/about.jpg') no-repeat;
+  background-position: 50% 50%;
+  background-clip: text;
+  color: transparent !important;
+  line-height: 1.1;
+}
+
+.about-image .years-design h5 {
+  color: #ff9800;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
