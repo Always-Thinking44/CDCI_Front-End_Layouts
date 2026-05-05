@@ -361,6 +361,30 @@
 
             </div>
 
+
+
+            <div class= "portfolio-count-container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h2 class="number">24</h2>
+                        <h3>Your Helping Business</h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h2 class="number">250</h2>
+                        <h3>Working Employees</h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h2 class="number">4500</h2>
+                        <h3>Complete Projects</h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h2 class="number">3000</h2>
+                        <h3>Happy Costumers</h3>
+                    </div>
+                </div>
+                
+            </div>
+
         
             
 
@@ -659,6 +683,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    <!--Efeito Isotopo do portfolio-->
     <script src="jquery.min.js"></script>
     <script src="isotope.pkgd.min.js"></script>
 
@@ -677,6 +702,47 @@
                 filter:selector
             });
             return false;
+        });
+    </script>
+
+
+
+
+    <!--Efeito CounterUp do portfolio-->
+    <script>
+        $(document).ready(function() {
+            // Seleciona todos os elementos com a classe .number
+            const observers = document.querySelectorAll('.number');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    // Se o elemento entrou na tela
+                    if (entry.isIntersecting) {
+                        const $this = $(entry.target);
+                        const countTo = $this.text(); // Pega o número final que está no HTML
+
+                        // Inicia a animação do número
+                        $({ countNum: 0 }).animate({
+                            countNum: countTo
+                        }, {
+                            duration: 2000, // 2 segundos
+                            easing: 'swing',
+                            step: function() {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function() {
+                                $this.text(this.countNum);
+                                // NÃO FAZ MAIS NADA: O número fica parado aqui
+                            }
+                        });
+
+                        // ESTA É A CHAVE: Para de observar o elemento após a primeira vez
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 }); // Só dispara quando 50% do número estiver visível
+
+            observers.forEach(obs => observer.observe(obs));
         });
     </script>
 </body>
