@@ -313,6 +313,56 @@
 
         <!--Portfolio-->
         <section id="portfolio">
+            <div class="section-title">
+                <h6 class="sub-title">Recent Works</h6>
+                <h2>Our Portfolio</h2>
+            </div>
+
+            <div class="container">
+                <div class="portfolio-menu">
+                    <ul>
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".branding">Branding</li>
+                        <li data-filter=".app">Aplication</li>
+                        <li data-filter=".web">Web Design</li>
+                        <li data-filter=".photograph">Photograph</li>
+                    </ul>
+                </div>
+
+
+                <div class="row portfolio-item">
+                    
+                    <div class="item branding col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/img/portfolio-1.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="item app photograph col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/img/portfolio-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="item branding web col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/img/portfolio-3.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="item web col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/img/portfolio-4.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="item app col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/img/portfolio-5.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="item app photograph col-sm-12 col-md-6 col-lg-4">
+                        <img src="assets/img/portfolio-6.jpg" alt="" class="img-fluid">
+                    </div>
+            
+                    
+                </div>
+
+            </div>
+
+        
+            
 
         </section>
 
@@ -608,5 +658,26 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="jquery.min.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+
+    <script>
+        $('.portfolio-item').isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+
+        $('.portfolio-menu ul li').click(function(){
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+
+            var selector = $(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter:selector
+            });
+            return false;
+        });
+    </script>
 </body>
 </html>
