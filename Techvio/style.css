@@ -16,6 +16,10 @@ section {
     margin: 10px 0px;
 }
 
+a{
+    text-decoration: none;
+}
+
 p {
 	color: #5f5f5f;
     font-size: 16px;
@@ -456,3 +460,306 @@ li.active{
   text-transform: uppercase;
   margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.subscribe-area {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.5;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.subscribe-content { text-align: left; }
+
+.subscribe-content p {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.subscribe-content h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.newsletter-form {
+  position: relative;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form .input-newsletter {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  height: 50px;
+  display: block;
+  padding-left: 25px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  outline: 0;
+}
+
+.newsletter-form .input-newsletter::-webkit-input-placeholder { color: #5f5f5f; }
+.newsletter-form .input-newsletter:-ms-input-placeholder { color: #5f5f5f; }
+.newsletter-form .input-newsletter::placeholder { color: #5f5f5f; }
+
+/* Botão posicionado à direita do campo de email */
+.newsletter-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 30px;
+  border-radius: 0px 5px 5px 0px;
+  text-transform: capitalize;
+  background-color: #7b68ee;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+}
+
+.newsletter-form button:hover {
+  color: #ffffff;
+  background-color: #ff9800;
+}
+
+
+
+
+.footer-subscribe-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: #042c4c;
+}
+
+/* Imagem de fundo com opacidade baixa sobre o fundo escuro */
+.footer-subscribe-wrapper:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('assets/img/Footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.footer-heading { margin-bottom: 20px; }
+
+.footer-heading h3 {
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  margin: 0;
+}
+
+.single-footer-widget .footer-social {
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.single-footer-widget .footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.single-footer-widget .footer-social li:last-child { margin-right: 0; }
+
+.single-footer-widget .footer-social i {
+  color: #7b68ee;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-footer-widget .footer-social i:hover {
+  color: #ffffff;
+  border: 1px solid #7b68ee;
+  background-color: #7b68ee;
+}
+
+.single-footer-widget p {
+  color: #ececec;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.single-footer-widget .footer-heading { margin-bottom: 25px; }
+
+.single-footer-widget .footer-heading h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.single-footer-widget .footer-quick-links {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.single-footer-widget .footer-quick-links li {
+  padding-bottom: 18px;
+  list-style-type: none;
+}
+
+.single-footer-widget .footer-quick-links li:last-child { padding-bottom: 0; }
+
+.single-footer-widget .footer-quick-links li a {
+  display: inline-block;
+  color: #ececec;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.single-footer-widget .footer-quick-links li a:hover {
+  color: #7b68ee;
+  text-decoration: underline !important;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-footer-widget .footer-info-contact {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 16px;
+}
+
+.single-footer-widget .footer-info-contact:last-child { margin-bottom: 0; }
+
+.single-footer-widget .footer-info-contact i {
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.single-footer-widget .footer-info-contact i::before { font-size: 20px; }
+
+.single-footer-widget .footer-info-contact h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.single-footer-widget .footer-info-contact span {
+  color: #ececec;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.single-footer-widget .footer-info-contact span a {
+  color: #ececec;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.single-footer-widget .footer-info-contact span a:hover { color: #7b68ee; }
+
+/*********************************************
+ ** 18 - Secção Copyright
+ *********************************************/
+.copyright-area {
+  padding: 35px 0;
+  background-color: #042c4c;
+  border-top: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.copyright-area p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.copyright-area p a {
+  color: #ececec;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.copyright-area p a:hover { color: #7b68ee; }
+
+.copyright-area ul {
+  padding-left: 0;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.copyright-area ul li {
+  position: relative;
+  color: #ececec;
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.copyright-area ul li a {
+  color: #ffffff;
+  display: inline-block;
+}
+
+.copyright-area ul li a:hover { color: #7b68ee; }
+
+/* Separador vertical entre os links */
+.copyright-area ul li::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -13px;
+  width: 1px;
+  height: 14px;
+  background-color: #ffffff;
+}
+
+.copyright-area ul li:last-child { margin-right: 0; }
+.copyright-area ul li:last-child::before { display: none; }
+.copyright-area ul li:first-child { margin-left: 0; }
