@@ -685,6 +685,32 @@ li.active{
 
 
 
+#digital{
+  background: linear-gradient(rgba(0, 28, 95, 0.5), rgba(0, 28, 95, 0.5)),
+    url('assets/img/city.jpeg') center/cover;
+}
+#digital .section-title h2 {
+  color: #fff;
+  font-weight: 650;
+}
+
+#digital p{
+  color: #fff;
+  text-align: justify;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.paragrafo{
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 
 .contact-section {
   position: relative;
@@ -943,9 +969,7 @@ li.active{
 
 .single-footer-widget .footer-info-contact span a:hover { color: #7b68ee; }
 
-/*********************************************
- ** 18 - Secção Copyright
- *********************************************/
+
 .copyright-area {
   padding: 35px 0;
   background-color: #042c4c;
