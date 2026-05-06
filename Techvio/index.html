@@ -23,12 +23,62 @@
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!--Vanilla Tilt-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
     <title>Techvio | IT Solutions & Business Services</title>
 </head>
 <body>
     
 
     <main>
+
+        <section class="home-section index-1">
+            <!-- Canvas do particles.js (preenchido dinamicamente pelo JS) -->
+            <div id="particles-js"></div>
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            
+                            <div class="col-lg-6 col-md-12">
+                                <div class="main-banner-content">
+                                    <!-- Ícones de redes sociais -->
+                                    <ul class="social-icon-list">
+                                        <li><a href="#"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="bi bi-youtube" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                    <h1>Best IT Solutions &amp; Business Services for Your Company</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor magna aliqua ipsum is simply dummy text of the printing.</p>
+                                    <!-- Botões CTA com efeito ripple -->
+                                    <div class="banner-btn">
+                                        <a class="default-btn-one" href="#">Our Service <span></span></a>
+                                        <a class="default-btn-two" href="#">Contact Us <span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="col-lg-6 col-md-12" data-tilt>
+                                <div class="banner-image">
+                                    <img src="assets/img/home-font.png" alt="image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Forma decorativa ondulada na base da hero section -->
+            <div class="creative-shape">
+                <img src="assets/img/home-bottom-shape.png" alt="forma decorativa">
+            </div>
+        </section>
+            
+
+
+
 
         <!-- SERVICES SECTION -->
         <section id="services">
@@ -849,6 +899,22 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--Efeito Particles do header-->
+    <script src="particles.min.js"></script>
+	<script src="particles-app-2.js"></script>
+
+
+    <!--Efeito Vanilla Tilt do header   -->
+    <script>
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+        max: 15,
+        speed: 400,
+        glare: false,
+        "max-glare": 0.3,
+        });
+    </script>
+
 
     <!--Efeito Isotopo do portfolio-->
     <script src="jquery.min.js"></script>

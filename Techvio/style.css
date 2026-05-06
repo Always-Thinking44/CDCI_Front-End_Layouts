@@ -57,6 +57,123 @@ p {
 
 
 
+.home-section {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  min-height: 100vh;
+}
+
+/* Gradiente de fundo da hero section principal */
+.home-section.index-1 {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 800px;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#370b6f), color-stop(#00429b), color-stop(#006dba), color-stop(#0095ce), to(#2dbcdc));
+  background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+}
+
+.main-banner-content { padding-top: 50px; }
+
+.main-banner-content h1 {
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.main-banner-content h6 {
+  color: #ff9800;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.main-banner-content p {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.main-banner-content .banner-btn { margin-top: 25px; }
+
+/* Ícones sociais na hero section */
+.main-banner-content .social-icon-list { margin-bottom: 15px; }
+
+.main-banner-content .social-icon-list li {
+  display: inline-block;
+  margin: 5px 5px;
+}
+
+.main-banner-content .social-icon-list li a {
+  color: #fff;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  background-color: transparent;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.main-banner-content .social-icon-list li a:hover {
+  color: #fff;
+  border: 1px solid #7b68ee;
+  background-color: #7b68ee;
+}
+
+/*
+ * EFEITO TILT NA IMAGEM DA HERO SECTION (Vanilla Tilt)*/
+.home-section .banner-image {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Forma decorativa na base da hero, em baixo do conteúdo */
+.home-section .creative-shape {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: auto;
+}
+
+/* Canvas do particles.js (fundo de partículas animadas) */
+#particles-js {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
 /*SERVICES SECTION*/
 
 .cartao-services {
