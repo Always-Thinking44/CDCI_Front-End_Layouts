@@ -551,6 +551,113 @@ li.active{
 
 
 
+
+
+
+
+.contact-section {
+  position: relative;
+  z-index: 1;
+  background: url('assets/img/globo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact-form .form-group { margin-bottom: 30px; }
+
+.contact-form form .form-control {
+  border: 0;
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  border-left: 2px solid #7b68ee;
+  background-color: #b3b1b1;
+  -webkit-box-shadow: 0 5px 20px rgba(218, 225, 232, 0.8);
+  box-shadow: 0 5px 20px rgba(218, 225, 232, 0.8);
+}
+
+.contact-form form .form-control:focus {
+  border: none;
+  outline: none;
+  border: 1px solid #7b68ee;
+  border-left: 2px solid #7b68ee;
+}
+
+.contact-form form textarea.form-control {
+  height: auto;
+  padding-top: 15px;
+  line-height: initial;
+}
+
+/* Cor de destaque nos textos de contacto */
+.color-text { color: #7b68ee; }
+
+/* Mensagens de feedback do formulário */
+.contact-section .form-message.success {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #03b103;
+  margin-bottom: 30px;
+}
+
+.contact-section .form-message.error {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #ff4d15;
+  margin-bottom: 30px;
+}
+
+/* Variante da secção de contacto para a home page 1 */
+.contact-section.home-1-contact-section {
+  background-position: right center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.contact-section.home-1-contact-section .form-control {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #cacaca;
+  border-left: 2px solid #7b68ee;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact-section.home-1-contact-section .contact-form form textarea.form-control {
+  height: auto;
+  padding-top: 15px;
+  line-height: initial;
+}
+
+.contact-section.home-1-contact-section .home-contact-img { text-align: center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer-subscribe-wrapper {
   position: relative;
   z-index: 1;
