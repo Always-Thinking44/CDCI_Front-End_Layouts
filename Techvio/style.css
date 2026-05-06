@@ -670,6 +670,20 @@ li.active{
 
 
 
+.logo-box {
+    border: 2px solid #ddd;
+    border-radius: 16px;
+    padding: 13px;
+    text-align: center;
+}
+
+.logo-box img {
+  
+    object-fit: contain;
+}
+
+
+
 
 
 .contact-section {
