@@ -1,7 +1,9 @@
 <!--FORMATAÇÕES GERAIS-->
 
-body {
+*{
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -10,6 +12,7 @@ body {
 	font-family: 'Dosis', sans-serif;
 	margin: 0;
 }
+
 
 section {
     padding: 90px 0px;
@@ -51,6 +54,206 @@ p {
     line-height: 1.5;
     margin-bottom: 65px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*NAVBAR*/
+
+.navbar-section {
+    transition: 0.4s;
+    background: transparent;
+    padding: 15px 0;
+}
+
+/* Sticky */
+
+.navbar-section.is-sticky {
+    background: #ffffff;
+    box-shadow: 0 2px 28px rgba(0,0,0,0.06);
+    animation: slideDown 0.5s ease;
+}
+
+/* Animation */
+
+@keyframes slideDown {
+
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*NAV LINKS*/
+
+.navbar-nav .nav-link {
+
+    color: #ffffff !important;
+  font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+
+    margin: 0 12px;
+
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #7b68ee !important;
+}
+
+/* Sticky links */
+
+.navbar-section.is-sticky .nav-link {
+    color: #505050 !important;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.dropdown-menu {
+
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    top: 120%;
+    transition: 0.4s;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+.dropdown-item {
+    padding: 12px 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.dropdown-item:hover {
+    background: #7b68ee;
+    color: #ffffff;
+}
+
+/* =========================
+   LOGOS
+========================= */
+
+.black-logo {
+    display: none;
+}
+
+.navbar-section.is-sticky .white-logo {
+    display: none;
+}
+
+.navbar-section.is-sticky .black-logo {
+    display: block;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+}
+
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+
+        background: #ffffff;
+
+        padding: 20px;
+
+        margin-top: 15px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    }
+
+    .navbar-nav .nav-link {
+        color: #505050 !important;
+        padding: 12px 0;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .navbar .dropdown:hover .dropdown-menu {
+
+        display: block;
+
+        margin-top: 0;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        top: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -694,6 +897,10 @@ li.active{
   font-weight: 650;
 }
 
+#digital .section-title{
+  margin-bottom: 0px auto;
+}
+
 #digital p{
   color: #fff;
   text-align: justify;
@@ -707,6 +914,7 @@ li.active{
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -50px;
 }
 
 
