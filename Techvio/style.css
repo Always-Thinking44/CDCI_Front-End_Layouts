@@ -650,6 +650,7 @@ ul {
     display: inline-block;
     margin-bottom: 30px;
     margin-top: 30px;
+    border-radius: 5px;
 }
 
 
@@ -657,6 +658,101 @@ li.active{
     background: #7b68ee;
     color: #fff;
 }
+
+
+
+.portfolio-content-overlay {
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  right: 10px;
+  bottom: -20px;
+  padding: 15px 20px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  margin: 30px 15px;
+}
+
+/* Categoria: desliza da esquerda */
+.portfolio-content-overlay p {
+  color: #7b68ee;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-15px);
+  transform: translateX(-15px);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-bottom: 0;
+}
+
+/* Título: desliza da direita */
+.portfolio-content-overlay h3 {
+  color: #1b1b1b;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Ao hover: texto aparece com atraso de 0.3s */
+.item:hover .portfolio-content-overlay p,
+.item:hover .portfolio-content-overlay h3 {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: .3s;
+  transition-delay: .3s;
+}
+
+/* Overlay sobe e aparece */
+.item:hover .portfolio-content-overlay {
+  bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ícone de link desliza da direita para o centro */
+.portfolio-content-overlay .portfolio-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  color: #fff;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 25px;
+  overflow: hidden;
+  line-height: normal;
+  background-color: #7b68ee;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out 0s;
+  transition-delay: 0.2s;
+}
+
+.item:hover .portfolio-content-overlay .portfolio-link-icon {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+
+
 
 
 .portfolio-count-container{
