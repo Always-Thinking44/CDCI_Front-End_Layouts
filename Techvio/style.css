@@ -259,27 +259,29 @@ body {
 
 
 
-
 .home-section {
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 800px;
-  min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 100vh;
+
+    padding-top: 140px;
+    padding-bottom: 100px;
+
+    z-index: 1;
 }
 
 /* Gradiente de fundo da hero section principal */
 .home-section.index-1 {
-  overflow: hidden;
   position: relative;
-  z-index: 1;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  height: 800px;
-  min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#370b6f), color-stop(#00429b), color-stop(#006dba), color-stop(#0095ce), to(#2dbcdc));
   background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
 }
@@ -780,6 +782,137 @@ li.active{
   text-transform: uppercase;
   margin-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+.testimonials {
+  background: #f4f4f8;
+  padding: 90px 40px 80px;
+  overflow: hidden;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Viewport — janela fixa que mostra exactamente 3 cards */
+.testi-viewport {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Track — linha horizontal que desliza */
+.testi-track {
+  display: flex;
+  gap: 28px;
+  transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Card */
+.testi-card {
+  flex: 0 0 calc((100% - 56px) / 3);
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 40px 28px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Estrelas */
+.testi-stars {
+  display: flex;
+  gap: 5px;
+}
+.testi-stars i {
+  color: #f59e0b;
+  font-size: 1.15rem;
+}
+
+/* Texto */
+.testi-text {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.85;
+  font-style: italic;
+  margin: 0;
+  flex: 1;
+}
+
+/* Avatar */
+
+.testi-avatar img {
+  width: 90px;
+  display: block;
+  border-radius: 50%;
+  border-right: 5px solid #ffffff;
+  border-top: 5px solid #ffffff;
+  border-left: #7b68ee 5px solid;
+  border-bottom: #7b68ee 5px solid;
+  margin: 0 auto;
+}
+
+.testi-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+.testi-country {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #7c3aed;
+}
+
+/* Dots — visíveis e funcionais */
+.testi-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.testi-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1c4f5;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.testi-dot.is-active {
+  background: #7c3aed;
+  transform: scale(1.35);
+}
+
+/* ── Responsividade ── */
+@media (max-width: 991px) {
+  .testimonials { padding: 70px 30px 60px; }
+  .testi-card   { flex: 0 0 calc((100% - 28px) / 2); }
+}
+@media (max-width: 600px) {
+  .testimonials { padding: 60px 20px 50px; }
+  .testi-card   { flex: 0 0 100%; }
+}
+
+
+
+
 
 
 
