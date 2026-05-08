@@ -238,7 +238,7 @@ body {
 
 .navbar-section {
     transition: 0.4s;
-    background: col;
+    background: transparent;
     padding: 15px 0;
     margin:0 !important;
 
@@ -345,13 +345,9 @@ body {
     .navbar-collapse {
 
         background: #ffffff;
-
         padding: 20px;
-
         margin-top: 15px;
-
         border-radius: 10px;
-
         box-shadow: 0 0 20px rgba(0,0,0,0.08);
     }
 
@@ -367,13 +363,9 @@ body {
     .navbar .dropdown:hover .dropdown-menu {
 
         display: block;
-
         margin-top: 0;
-
         opacity: 1;
-
         visibility: visible;
-
         top: 100%;
     }
 
@@ -413,15 +405,11 @@ body {
 .home-section {
     position: relative;
     overflow: hidden;
-
     display: flex;
     align-items: center;
-
     min-height: 100vh;
-
     padding-top: 140px;
     padding-bottom: 100px;
-
     z-index: 1;
 }
 
