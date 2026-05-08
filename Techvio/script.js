@@ -12,6 +12,31 @@
     });
 
 
+
+
+    /*Efeito preloader*/
+
+
+    $(window).on('load', function () {
+    if ($(".wow").length) {
+      var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 20,
+        mobile: true,
+        live: true,
+      });
+      wow.init();
+    }
+    });
+
+    setTimeout(function() {
+        $('.preloader').addClass('preloader-deactivate');
+    }, 1500); 
+
+
+
+
 /*Efeito Isotopo do portfolio*/
 
 

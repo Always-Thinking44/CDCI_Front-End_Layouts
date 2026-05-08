@@ -397,6 +397,116 @@ body {
 
 
 
+/*preloader*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background-color: transparent;
+}
+
+.preloader .loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateY(-43%);
+  transform: translateY(-43%);
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0 auto;
+}
+
+/* A caixa branca que faz bounce com animação de rotação e squash */
+.preloader .loader .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-animation: animate .5s linear infinite;
+  animation: animate .5s linear infinite;
+}
+
+/* Sombra elíptica que se expande/contrai em sincronia com o bounce */
+.preloader .loader .shadow {
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  opacity: 0.1;
+  border-radius: 50%;
+  background-color: #000000;
+  -webkit-animation: shadow .5s linear infinite;
+  animation: shadow .5s linear infinite;
+}
+
+/* Painéis de fundo roxo (esquerda e direita) */
+.preloader::before, .preloader::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #7b68ee;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
+
+.preloader::after {
+  left: auto;
+  right: 0;
+}
+
+/* Estado desactivado: painéis colapsam para 0 e o loader desaparece */
+.preloader.preloader-deactivate { visibility: hidden; }
+
+.preloader.preloader-deactivate::after,
+.preloader.preloader-deactivate::before { width: 0; }
+
+.preloader.preloader-deactivate .loader {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Animação de bounce+rotação da caixinha branca */
+@-webkit-keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { -webkit-transform: translateY(9px) rotate(22.5deg); transform: translateY(9px) rotate(22.5deg); }
+  50% { -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg); transform: translateY(18px) scale(1, 0.9) rotate(45deg); border-bottom-right-radius: 40px; }
+  75% { -webkit-transform: translateY(9px) rotate(67.5deg); transform: translateY(9px) rotate(67.5deg); }
+  100% { -webkit-transform: translateY(0) rotate(90deg); transform: translateY(0) rotate(90deg); }
+}
+@keyframes animate {
+  17% { border-bottom-right-radius: 3px; }
+  25% { -webkit-transform: translateY(9px) rotate(22.5deg); transform: translateY(9px) rotate(22.5deg); }
+  50% { -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg); transform: translateY(18px) scale(1, 0.9) rotate(45deg); border-bottom-right-radius: 40px; }
+  75% { -webkit-transform: translateY(9px) rotate(67.5deg); transform: translateY(9px) rotate(67.5deg); }
+  100% { -webkit-transform: translateY(0) rotate(90deg); transform: translateY(0) rotate(90deg); }
+}
+
+/* Animação da sombra (expande no impacto) */
+@-webkit-keyframes shadow {
+  50% { -webkit-transform: scale(1.2, 1); transform: scale(1.2, 1); }
+}
+@keyframes shadow {
+  50% { -webkit-transform: scale(1.2, 1); transform: scale(1.2, 1); }
+}
+
+
+
 
 
 
