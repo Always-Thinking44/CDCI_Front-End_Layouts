@@ -55,6 +55,148 @@ p {
     margin-bottom: 65px;
 }
 
+/*
+ * EFEITO RIPPLE NOS BOTÕES (default-btn, default-btn-one, default-btn-two)
+
+ */
+.default-btn {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #7b68ee;
+  box-shadow: 0 7px 25px rgb(123,104,238,0.25);
+  margin-top: 5px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+}
+
+.default-btn span {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  display: block;
+  border-radius: 30px;
+  background-color: #3e57d0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.default-btn:hover,
+.default-btn:focus { color: #ffffff; }
+
+.default-btn:hover span,
+.default-btn:focus span {
+  width: 200%;
+  height: 500px;
+}
+
+/* Botão alternativo (fundo branco, texto roxo) — mesmo efeito ripple */
+.default-btn-one {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: #7b68ee;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffffff;
+  box-shadow: 0 7px 25px rgb(123,104,238,0.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.default-btn-one span {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  display: block;
+  border-radius: 30px;
+  background-color: #3e57d0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.default-btn-one:hover,
+.default-btn-one:focus { color: #ffffff; }
+
+.default-btn-one:hover span,
+.default-btn-one:focus span {
+  width: 200%;
+  height: 500px;
+}
+
+/* Botão escuro (fundo azul escuro) — mesmo efeito ripple com onda branca */
+.default-btn-two {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #3e57d0;
+  box-shadow: 0 7px 25px rgb(123,104,238,0.25);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.default-btn-two span {
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  display: block;
+  border-radius: 30px;
+  background-color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.default-btn-two:hover,
+.default-btn-two:focus { color: #7b68ee; }
+
+.default-btn-two:hover span,
+.default-btn-two:focus span {
+  width: 200%;
+  height: 500px;
+}
 
 
 
@@ -147,9 +289,7 @@ body {
     color: #505050 !important;
 }
 
-/* =========================
-   DROPDOWN
-========================= */
+/* DROPDOWN */
 
 .dropdown-menu {
 

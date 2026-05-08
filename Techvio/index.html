@@ -317,15 +317,8 @@
                             </p>
 
                             <div class="banner-btn">
-
-                                <a class="default-btn-one" href="#">
-                                    Our Service
-                                </a>
-
-                                <a class="default-btn-two" href="#">
-                                    Contact Us
-                                </a>
-
+									<a class="default-btn-one" href="#">Our Service <span></span></a>
+									<a class="default-btn-two" href="#">Contact Us <span></span></a>
                             </div>
 
                         </div>
@@ -1630,7 +1623,26 @@
   startTimer();
 }());
 
+</script>
 
+
+
+<script>
+    $(function () {
+    $('.default-btn, .default-btn-one, .default-btn-two')
+      .on('mouseenter', function (e) {
+        var parentOffset = $(this).offset(),
+          relX = e.pageX - parentOffset.left,
+          relY = e.pageY - parentOffset.top;
+        $(this).find('span').css({ top: relY, left: relX });
+      })
+      .on('mouseout', function (e) {
+        var parentOffset = $(this).offset(),
+          relX = e.pageX - parentOffset.left,
+          relY = e.pageY - parentOffset.top;
+        $(this).find('span').css({ top: relY, left: relX });
+      });
+  });
 </script>
 </body>
 </html>
