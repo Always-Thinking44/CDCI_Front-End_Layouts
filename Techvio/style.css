@@ -212,65 +212,63 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 html,
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /*NAVBAR*/
 
 .navbar-section {
-    transition: 0.4s;
-    background: transparent;
-    padding: 15px 0;
-    margin:0 !important;
-
+  transition: 0.4s;
+  background: transparent;
+  padding: 15px 0;
+  margin:0 !important;
+  color: white;
 }
+
+/* Ícone hambúrguer branco antes do scroll */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Quando fizer scroll e ficar sticky, muda para preto */
+
+.navbar-section.is-sticky .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2850,50,50,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
 
 /* Sticky */
 
 .navbar-section.is-sticky {
-    background: #ffffff;
-    box-shadow: 0 2px 28px rgba(0,0,0,0.06);
-    animation: slideDown 0.5s ease;
+  background: #ffffff;
+  box-shadow: 0 2px 28px rgba(0,0,0,0.06);
+  animation: slideDown 0.5s ease;
 }
 
 /* Animation */
 
 @keyframes slideDown {
 
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*NAV LINKS*/
 
 .navbar-nav .nav-link {
-
   color: #ffffff !important;
   font-family: 'Nunito', sans-serif;
   font-size: 15px;
@@ -280,101 +278,92 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #7b68ee !important;
+  color: #7b68ee !important;
 }
 
 /* Sticky links */
 
 .navbar-section.is-sticky .nav-link {
-    color: #505050 !important;
+  color: #505050 !important;
 }
 
 /* DROPDOWN */
 
 .dropdown-menu {
-
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    top: 120%;
-    transition: 0.4s;
-    border: none;
-    border-radius: 8px;
-    padding: 0;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  top: 120%;
+  transition: 0.4s;
+  border: none;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
 }
 .dropdown-item {
-    padding: 12px 18px;
-    font-weight: 600;
-    transition: 0.3s;
+  padding: 12px 18px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .dropdown-item:hover {
-    background: #7b68ee;
-    color: #ffffff;
+  background: #7b68ee;
+  color: #ffffff;
 }
 
-/* =========================
-   LOGOS
-========================= */
+/* LOGOS */
 
 .black-logo {
-    display: none;
+  display: none;
 }
 
 .navbar-section.is-sticky .white-logo {
-    display: none;
+  display: none;
 }
 
 .navbar-section.is-sticky .black-logo {
-    display: block;
+  display: block;
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
-.navbar-toggler {
-    border: none;
-    box-shadow: none !important;
+.navbar-toggler{
+  border: none;
+  box-shadow: none !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 991px) {
 
-    .navbar-collapse {
+  .navbar-collapse {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  }
+  
 
-        background: #ffffff;
-        padding: 20px;
-        margin-top: 15px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.08);
-    }
-
-    .navbar-nav .nav-link {
-        color: #505050 !important;
-        padding: 12px 0;
-    }
+  .navbar-nav .nav-link {
+    color: #505050 !important;
+    padding: 12px 0;
+  }
 
 }
 
 @media (min-width: 992px) {
 
-    .navbar .dropdown:hover .dropdown-menu {
-
-        display: block;
-        margin-top: 0;
-        opacity: 1;
-        visibility: visible;
-        top: 100%;
-    }
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+  }
 
 }
 
-.navbar {
-    padding: 0 !important;
-    margin: 0 !important;
-}
 
 .navbar-section {
     top: 0;
@@ -770,47 +759,47 @@ body {
 /*CHOSE SECTION*/
 
 ul {
-    padding: 0;
-    list-style: none;
-    margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
 }
 
 /* Container para a lista de recursos */
 .features-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    list-style-type: none;
-    margin-bottom: 0;
-    margin-top: 16px;
-    margin-left: -10px;
-    margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 16px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 /* Estilização dos itens da lista de recursos */
 .features-list li {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
 /* Estilização dos spans dentro dos itens da lista de recursos */
 .features-list li span {
-    position: relative;
-    z-index: 1;
-    color: #404040;
-    font-size: 16px;
-    font-weight: 600;
-    display: block;
-    padding: 13px 15px;
-    border-radius: 5px;
-    border-left: 2px solid #7b68ee;
-    background-color: #ffffff;
-    box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
-    transition: 0.4s;
+  position: relative;
+  z-index: 1;
+  color: #404040;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  padding: 13px 15px;
+  border-radius: 5px;
+  border-left: 2px solid #7b68ee;
+  background-color: #ffffff;
+  box-shadow: -1px 3px 20px 0px rgb(82, 90, 101, 0.1);
+  transition: 0.4s;
 }
 
 /* Cria uma camada de fundo animada, começa com largura 0 (invisível) Será expandida no hover para criar efeito de destaque */
@@ -1093,7 +1082,7 @@ li.active{
 
 
 /* Caixa flutuante com os anos de experiência */
-.about-image .years-design {
+.about-image .years-design{
   position: absolute;
   left: 0;
   right: 0;
@@ -1110,10 +1099,10 @@ li.active{
 }
 
 /* Texto com imagem de fundo dentro (efeito "clip text") */
-.about-image .years-design h2 {
+.about-image .years-design h2{
   font-size: 70px;
   font-weight: 800;
-  background: url('../assets/img/about.jpg') no-repeat;
+  background: url('assets/img/about.jpg') no-repeat;
   background-position: 50% 50%;
   background-clip: text;
   color: transparent !important;

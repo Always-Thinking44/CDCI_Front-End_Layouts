@@ -114,27 +114,27 @@ var wind = $(window);
 
 /* Efeito Sticky do Navbar */
 
-function checkNavbarSticky() {
+  function checkNavbarSticky() {
 
-    const navbar = document.querySelector('.navbar-section');
+      const navbar = document.querySelector('.navbar-section');
 
-    if (window.scrollY > 120) {
+      if (window.scrollY > 120) {
 
-        navbar.classList.add('is-sticky');
+          navbar.classList.add('is-sticky');
 
-    } else {
+      } else {
 
-        navbar.classList.remove('is-sticky');
-    }
-}
+          navbar.classList.remove('is-sticky');
+      }
+  }
 
-/* Executa ao scroll */
+  /* Executa ao scroll */
 
-window.addEventListener('scroll', checkNavbarSticky);
+  window.addEventListener('scroll', checkNavbarSticky);
 
-/* Executa ao carregar */
+  /* Executa ao carregar */
 
-document.addEventListener('DOMContentLoaded', checkNavbarSticky);
+  document.addEventListener('DOMContentLoaded', checkNavbarSticky);
 
 
 
