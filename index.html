@@ -1,260 +1,247 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meus Projetos</title>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meus Projetos</title>
 
-<style>
+        <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+            *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+            }
 
-body{
-background:#0f172a;
-color:white;
-overflow-x:hidden;
-}
+            body{
+            background:#0f172a;
+            color:white;
+            overflow-x:hidden;
+            }
 
-header{
-text-align:center;
-padding:60px;
-}
+            header{
+            text-align:center;
+            padding:60px;
+            }
 
-header h1{
-font-size:3rem;
-margin-bottom:15px;
-}
+            header h1{
+            font-size:3rem;
+            margin-bottom:15px;
+            }
 
-header p{
-opacity:0.7;
-}
+            header p{
+            opacity:0.7;
+            }
 
-.container{
-width:90%;
-margin:auto;
-}
+            .container{
+            width:90%;
+            margin:auto;
+            }
 
-.project{
+            .project{
 
-display:flex;
-align-items:center;
-justify-content:space-between;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
 
-margin:100px 0;
-gap:40px;
+            margin:100px 0;
+            gap:40px;
 
-opacity:0;
-transform:translateY(100px);
-transition:1s;
-}
+            opacity:0;
+            transform:translateY(100px);
+            transition:1s;
+            }
 
-.project.show{
-opacity:1;
-transform:translateY(0);
-}
+            .project.show{
+            opacity:1;
+            transform:translateY(0);
+            }
 
-.preview{
+            .preview{
 
-width:55%;
-height:350px;
+            width:55%;
+            height:350px;
 
-border-radius:15px;
-overflow:hidden;
+            border-radius:15px;
+            overflow:hidden;
 
-box-shadow:
-0 0 20px rgba(0,255,255,.3);
+            box-shadow:
+            0 0 20px rgba(0,255,255,.3);
 
-transition:.5s;
-}
+            transition:.5s;
+            }
 
-.preview:hover{
+            .preview:hover{
 
-transform:scale(1.02);
+            transform:scale(1.02);
 
-box-shadow:
-0 0 40px rgba(0,255,255,.7);
+            box-shadow:
+            0 0 40px rgba(0,255,255,.7);
 
-}
+            }
 
-.preview iframe{
+            .preview iframe{
 
-width:100%;
-height:100%;
-border:none;
+            width:100%;
+            height:100%;
+            border:none;
 
-}
+            }
 
-.info{
+            .info{
 
-width:45%;
-}
+            width:45%;
+            }
 
-.info h2{
+            .info h2{
 
-font-size:2rem;
-margin-bottom:20px;
-}
+            font-size:2rem;
+            margin-bottom:20px;
+            }
 
-.info p{
+            .info p{
 
-line-height:1.6;
-margin-bottom:30px;
-opacity:0.8;
-}
+            line-height:1.6;
+            margin-bottom:30px;
+            opacity:0.8;
+            }
 
-button{
+            button{
 
-padding:15px 35px;
-border:none;
+            padding:15px 35px;
+            border:none;
 
-border-radius:30px;
+            border-radius:30px;
 
-font-size:16px;
+            font-size:16px;
 
-cursor:pointer;
+            cursor:pointer;
 
-background:#06b6d4;
-color:white;
+            background:#06b6d4;
+            color:white;
 
-transition:.4s;
-}
+            transition:.4s;
+            }
 
-button:hover{
+            button:hover{
 
-transform:translateY(-5px);
+            transform:translateY(-5px);
 
-background:#0891b2;
+            background:#0891b2;
 
-box-shadow:
-0 0 25px cyan;
-}
+            box-shadow:
+            0 0 25px cyan;
+            }
 
-@media(max-width:900px){
+            @media(max-width:900px){
 
-.project{
+            .project{
 
-flex-direction:column;
-}
+            flex-direction:column;
+            }
 
-.preview,
-.info{
+            .preview,
+            .info{
 
-width:100%;
-}
+            width:100%;
+            }
 
-}
+            }
 
-</style>
+        </style>
 
-</head>
+    </head>
 
-<body>
 
-<header>
+    <body>
 
-<h1>Meus Projetos Web</h1>
+        <header>
 
-<p>Portfólio com demonstrações e acesso rápido</p>
+            <h1>Meus Projetos Web</h1>
 
-</header>
+            <p>Portfólio com demonstrações e acesso rápido</p>
 
+        </header>
 
-<div class="container">
 
-<div class="project">
+        <div class="container">
 
-<div class="preview">
+            <div class="project">
+                <div class="preview">
+                    <iframe src="./StarBootstrap/index.html" style="background-color: #f7f7f7;"></iframe>
+                </div>
 
-<iframe src="./StarBootstrap/index.html"></iframe>
+                <div class="info">
+                    <h2>StartBootstrap</h2>
+                    <p>Projeto construído usando template StartBootstrap com adaptações visuais e funcionalidades próprias.</p>
+                    
+                    <a href="./StarBootstrap/index.html">
+                        <button>Visitar Site</button>
+                    </a>
+                </div>
 
-</div>
+            </div>
 
-<div class="info">
 
-<h2>StartBootstrap</h2>
 
-<p>
-Projeto construído usando template StartBootstrap
-com adaptações visuais e funcionalidades próprias.
-</p>
+            <div class="project">
 
-<a href="./StarBootstrap/index.html">
+                <div class="info">
+                    <h2>Techvio</h2>
+                    <p>
+                    Projeto baseado no template Techvio
+                    com interface moderna e recursos personalizados.
+                    </p>
 
-<button>Visitar Site</button>
+                    <a href="./techvio/index.html">
+                    <button>Visitar Site</button>
+                    </a>
 
-</a>
+                </div>
 
-</div>
+                <div class="preview">
 
-</div>
+                    <iframe src="./techvio/index.html"></iframe>
 
+                </div>
 
+            </div>
 
-<div class="project">
+        </div>
 
-<div class="info">
 
-<h2>Techvio</h2>
+        <script>
 
-<p>
-Projeto baseado no template Techvio
-com interface moderna e recursos personalizados.
-</p>
+            const projetos=
+            document.querySelectorAll('.project')
 
-<a href="./techvio/index.html">
+            function aparecer(){
 
-<button>Visitar Site</button>
+            projetos.forEach(projeto=>{
 
-</a>
+            let topo=
+            projeto.getBoundingClientRect().top
 
-</div>
+            if(topo<window.innerHeight-100){
 
-<div class="preview">
+            projeto.classList.add('show')
 
-<iframe src="./techvio/index.html"></iframe>
+            }
 
-</div>
+            })
 
-</div>
+            }
 
-</div>
+            window.addEventListener(
+            'scroll',
+            aparecer
+            )
 
+            aparecer()
 
-<script>
+        </script>
 
-const projetos=
-document.querySelectorAll('.project')
-
-function aparecer(){
-
-projetos.forEach(projeto=>{
-
-let topo=
-projeto.getBoundingClientRect().top
-
-if(topo<window.innerHeight-100){
-
-projeto.classList.add('show')
-
-}
-
-})
-
-}
-
-window.addEventListener(
-'scroll',
-aparecer
-)
-
-aparecer()
-
-</script>
-
-</body>
+    </body>
 </html>
